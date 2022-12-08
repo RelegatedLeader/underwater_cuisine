@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Underwater Cuisine</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://cdn.boatinternational.com/bi_prd/bi/library_images/CRWiAYl0RJS1toiFjsG1_Underwater-restaurants-NIYAMA-Subsix.jpg");
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT US</a>
+    <a href="#myMap" class="w3-bar-item w3-button">MAKE A RESERVATION</a>
+    <a href="#contactUs" class="w3-bar-item w3-button">CONTACT US</a>
+	<a href="#findUs" class="w3-bar-item w3-button">LOCATION</a>
+    <a href="#orderOnline" class="w3-bar-item w3-button">ORDER ONLINE</a>
+
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge w3-purple">Open from 10am to 11pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px"> <strong> UNDERWATER<br>CUISINE </strong> </span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b><br></b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">MENU</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Seafood');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Seafood</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Salads');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Salads</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Appetizers');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Appetizers</div>
+      </a>
+    </div>
+
+    <div id="Seafood" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>FISH (with sides)</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50-$18.50</span></h1>
+      <p class="w3-text-grey">Anchovies, Black Cod, Catfish, Tuna</p>
+      <hr>
+
+      <h1><b>Shellfish</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$32.50</span></h1>
+      <p class="w3-text-grey">Barnacles, Crabs, Craw/Cray Fish, Lobsters, Shrimps/Prawns</p>
+      <hr>
+
+      <h1><b>Mollusca</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00- $32.00</span></h1>
+      <p class="w3-text-grey">Abalone, Cockle, Clam, Loco, Mussel, Oyster, Periwinkle, Scallop</p>
+      <hr>
+
+      <h1><b>Cephalopods</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50 - $24.00</span></h1>
+      <p class="w3-text-grey">Cuttlefish, Octopus, Nautilus, Squid</p>
+      <hr>
+
+      <h1><b>Roe</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$40.00 - 60.50</span></h1>
+      <p class="w3-text-grey">Caviar, Ikura, Kazunoko, Lumpfish roe, Masago (capelin roe), Shad roe, Tobiko</p>
+      <hr>
+
+      <h1><b>Echinoderms</b> <span class="w3-tag w3-blue w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+      <p class="w3-text-grey">Sea cucumber, Uni</p>
+    </div>
+
+    <div id="Salads" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Shrimp Veggie Salad</b> <span class="w3-tag w3-purple w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
+      <p class="w3-text-grey">Ingredients: peeled and deveined cooked medium shrimp, medium tomatoes, medium cucumbers, small red onion</p>
+      <hr>
+
+      <h1><b>Spicy Crab Salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
+      <p class="w3-text-grey">Ingredients: mayonnaise, minced fresh parsley or cilantro, Sriracha chili sauce, lime juice, salt </p>
+      <hr>
+
+      <h1><b>Crab, Grapefruit and Watercress Salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+      <p class="w3-text-grey">Ingredients: champagne vinegar, honey, chopped sweet onion, Dijon mustard, sea salt, canola oil,  poppy seeds </p>
+      <hr>
+
+      <h1><b>Tarragon Tuna Salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+      <p class="w3-text-grey">Ingredients: light water-packed tuna, drained and flaked, chopped celery, chopped sweet onion,mayonnaise, minced fresh parsley </p>
+    </div>
+
+
+    <div id="Appetizers" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Fish Taco Bites</b> <span class="w3-tag w3-pink w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">Ingredients: salsa verde,cream cheese, lime juice, minced fresh cilantro,honey, Dash salt, breaded fish sticks  </p>
+      <hr>
+
+      <h1><b>Shrimp Lover Squares</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+      <p class="w3-text-grey">Ingredients: crescent rolls, cream cheese, sour cream, dill weed, teaspoon salt  </p>
+      <hr>
+
+      <h1><b>Chive Crab Cakes</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+      <p class="w3-text-grey">Ingredients: egg whites, egg, panko bread crumbs, minced fresh chives, all-purpose flour, hot pepper sauce </p>
+      <hr>
+
+      <h1><b>Salmon Mousse Cups</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+      <p class="w3-text-grey">Ingredients: cream cheese, butter, all-purpose flour  </p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-blue w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About US</h1>
+    <p>The Underwater Cuisine is recognized for offering the most exquisite, delicate, and reasonably priced items. Parker Smith, the franchise's founder, decided to launch his own restaurant in 1968 after watching how other eateries took advantage of naïve customers. He determined that everyone should be able to affordably consume delicacies. As a fisherman himself, he also understood the lifestyle of fishermen, but he found greater satisfaction in feeding hungry clients than in accumulating wealth. He led a regular life as a humble man and gave the world many of his inventions as he expanded not only in the food sector but also in the technology industry, which enables certain tasks to be performed without human aid.</p>
+
+    <p>Today, here at Underwater Cuisine, we strive to provide you, the customer, with the best possible meals. As we are located in the greatest seafood region in the world, everything is caught daily. </p>
+    <p><strong>You Are What You Create</strong><img src="https://images.fineartamerica.com/images-medium-large-5/1950s-man-chef-smiling-with-expressive-vintage-images.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>psst... Everyone eats here for free once a year, make sure to have your ID!</p>
+    <img src="https://www.researchgate.net/publication/337415904/figure/fig5/AS:964282246254595@1606914211813/hilton-Ithaa-Underwater-restaurant-maldives-Source-photograph-reproduced-with.ppm" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Opening Hours</b></h1>
+
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Mon & Tue CLOSED</p>
+        <p>Wednesday 10.00 - 24.00</p>
+        <p>Thursday 10:00 - 24:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Friday 10:00 - 12:00</p>
+        <p>Saturday 10:00 - 23:00</p>
+        <p>Sunday Closed</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="https://spoonuniversity.com/wp-content/uploads/sites/40/2015/03/almahara-1024x455.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<!-- make a reservation -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge"id="myMap" >
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Make a Reservation</h1>
+    <p>Find us at Conrad Rangali Island 20077, Maldives or call us at 960-668-0629</p>
+    <p><span class="w3-tag">FYI!</span>We provide full-service catering for any size occasion. We understand your demands and will prepare the cuisine to meet the most important aesthetic and gastronomic standards.</p>
+    <p class="w3-xxlarge"><strong>Reserve</strong> a table or ask for today's special! :</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND DETAILS</button></p>
+    </form>
+  </div>
+</div>
+
+
+
+<!-- Contact us -->
+<div class="w3-container w3-padding-64 w3-purple w3-grayscale-min w3-xlarge" id="contactUs">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Send us a Message!</h1>
+
+    <p><span class="w3-tag"></span>Do you wish to share anything with us? In that case, please do not hesitate to contact us! We are here to serve your requests. Please fill the information below with your name, day of visit and your message or inquiries. We will be there for you shortly. </p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date of Visit" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Your message / Ideas" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+
+<!-- Find us -->
+
+<div class="w3-container w3-padding-64 w3-blue w3-grayscale-min w3-xlarge" id="findUs">
+  <div class="w3-content">
+
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">FIND US</h1>
+
+
+       <p><strong> Location</strong><img src="https://www.thehotelguru.com/static-maps/hotels/85573.png" style="width:450px" class="w3-right w3-up" alt="Chef"></p>
+
+      <p> Address: Conrad Rangali Island 20077, Maldives </p>
+      <p> Phone No: 960-668-0629  </p>
+      <p> Email Address: underwatercuisine.gmail.com </p>
+
+
+  </div>
+</div>
+
+
+<!-- Coming Soon link to the ORDER ONLINE opton -->
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white" id= orderOnline>
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    Logo
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top"> <strong> ONLINE ORDERING ONLINE SOON... </strong> </h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">100 days left</p>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>© 1968-2022, FALLEN+ Eateries or its affiliates<a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green"></a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-blue", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-blue";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
